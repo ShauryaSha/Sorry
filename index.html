@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>I am sorry Ishika</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="garden.js"></script>
+<script type="text/javascript" src="function.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*THE CODE FOR SORRY</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Hello Ishika<br />
+			I know i fuckup sometimes<br />
+			<span class="comments">// Okay fine, I fuckup a lot, like LOT. </span><br />
+			But i am very very sorry;<br />
+			<span class="comments">// Please dont count this as a disappointment</span><br />
+			Idk how but i messed up, I remember i was awake just to wake you up;<br />
+			And then i suddenly fell asleep;<br />
+			I am so so so so so sooryyyyyyyyy;<br />
+			Ik a lot was at stake and this is very embarresing<br />
+			We have traveled a long way together;<br />
+			I have irrated you a lot ;<br />
+			<span class="comments">// And there is still a lot left.</span><br />
+			But please please forgive me, I promise i'll imporove<br />
+			<br>
+			<br>
+			All I want to say is:<br />
+			SORRY YRR, ITNA PYARA SA WEBSITE BANAYA TERE LIE, MAAN JA YRR<br />
+			<br>
+			<br>
+			Don't take this as a disappointment, bec i feel, i have rised up a little from being the last option;  <br />
+			And I don't wanna go back to being the last option by disappointing you;<br>
+			Click here for some flowers: <div class="fucked"> 
+				<a href="https://shauryasha.github.io/Flowers/">
+					<button>
+						Flowers
+					</button>
+				</a>
+			</div><br>
+			<span id="heartspan">
+			<a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					Ishika, I am Sorry
+					<!-- <div id="elapseClock"></div> -->
+				</div>
+				<div id="loveu">
+					Chole Bhature Kilaunga, Maan Ja<br/>
+					<div class="signature">- Shaurya</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+var offsetX = $("#loveHeart").width() / 2;
+var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2016, 8, 5);
+together.setHours(16);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0);
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
